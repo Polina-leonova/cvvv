@@ -1,0 +1,204 @@
+/* index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+header {
+  width: 100%; /* Установите ширину шапки на 100% */
+  padding: 10px 0; /* Добавьте отступы сверху и снизу */
+  background-color: #add8e6; /* Синий фон */
+  color: white; /* Цвет текста */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для шапки */
+  display: flex; /* Используйте флекс для расположения содержимого */
+  justify-content: flex-end; /* Выравнивание содержимого вправо */
+  align-items: center; /* Вертикальное выравнивание по центру */
+}
+
+header h1 {
+  margin: 0; /* Уберите отступы у заголовка */
+  font-size: 1.5rem; /* Размер шрифта заголовка */
+  margin-right: auto; /* Отодвиньте заголовок влево */
+}
+
+header nav ul {
+  list-style: none; /* Уберите маркеры списка */
+  padding: 0; /* Уберите отступы списка */
+  display: flex; /* Используйте флекс для навигации */
+}
+
+header nav ul li {
+  margin: 0 15px; /* Отступы между пунктами навигации */
+}
+
+header nav ul li a {
+  color: white; /* Цвет текста ссылок */
+  text-decoration: none; /* Убирает подчеркивание */
+}
+
+header nav ul li a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+
+
+.main-container {
+  margin: 40px; /* Отступы для всего контейнера */
+}
+
+.profile {
+  display: flex; /* Используйте Flexbox для расположения элементов */
+  align-items: flex-start; /* Выравнивание по верхнему краю */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.profile-photo {
+  width: 250px; /* Ширина фотографии */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  border-radius: 10px; /* Закругленные углы для прямоугольной формы */
+  margin-right: 20px; /* Отступ между фото и текстом */
+}
+
+.profile-info {
+  flex-grow: 1; /* Позволяет тексту занимать оставшееся пространство */
+}
+
+.profile-info h2 {
+  font-size: 35px; /* Увеличьте размер заголовка */
+  margin: 0; /* Уберите отступы */
+}
+
+.profile-info h3 {
+  margin: 60px 0; /* Отступы между заголовком и текстом */
+  font-size: 20px;
+}
+
+.education, .english-level {
+  margin: 15px 0; /* Больше промежутков между текстами */
+}
+
+.skills-description p {
+  line-height: 1.6; /* Увеличьте межстрочный интервал */
+  margin: 20px 0; /* Отступы сверху и снизу между абзацами */
+}
+
+.skills-description h4 {
+  margin: 20px 0; /* Отступы для заголовка */
+}
+.skills-description ul {
+  list-style-type: disc; /* Стиль маркеров списка */
+  margin-left: 20px; /* Отступ слева для списка */
+}
+.skills-title {
+  margin: 40px; /* Выровнять по левому краю */
+}
+
+.skills-description li {
+  margin: 10px 0; /* Отступы между пунктами списка */
+}
+
+
+.image-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* Изменено на 2 колонки */
+	max-width: 1200px;
+	margin: 0 auto;
+	gap: 3rem;
+	margin-top: 3rem;
+	justify-items: center; /* Центрирование элементов */
+}
+
+.image-box {
+	text-align: center; /* Центрирование текста в блоке */
+}
+
+.image-box img {
+	width: 100%;
+	height: auto;
+	transition: all 0.3s ease-in-out;
+	border-radius: 2rem;
+	border: 2px solid gray;
+}
+
+.image-box h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 10px 0 5px 0;
+	color: black; /* Заголовки черные */
+}
+
+.image-box p {
+	font-size: 16px;
+	margin: 0;
+	text-align: center;
+}
+
+.image-box:hover img {
+	transform: scale(1.1);
+}
+
+/* Дополнительный стиль для первой строки */
+.image-box:nth-child(1),
+.image-box:nth-child(2) {
+	grid-column: span 1; /* Каждое изображение занимает одну колонку */
+}
+
+.image-box:nth-child(3),
+.image-box:nth-child(4) {
+	grid-column: span 1; /* Каждое изображение занимает одну колонку */
+}
+.project-title {
+  margin: 40px; /* Выровнять по левому краю */
+  font-size: 25px;
+}
+.work-link {
+	color: black; /* Цвет ссылки черный */
+	text-decoration: none; /* Убираем подчеркивание */
+}
+
+.work-link:hover {
+	text-decoration: underline; /* Подчеркивание при наведении */
+	color: black; /* Убедитесь, что цвет остается черным при наведении */
+}
+.footer {
+  background-color: #add8e6; /* Пастельно-голубой фон */
+  padding: 20px; /* Отступы внутри футера */
+  text-align: center; /* Центрирование текста */
+  border-top: 1px solid #ddd; /* Линия сверху */
+  position: relative; /* Для корректного позиционирования */
+  bottom: 0; /* Привязка к низу, если необходимо */
+  width: 100%; /* Ширина на всю страницу */
+}
+
+.footer h2 {
+  margin-bottom: 10px; /* Отступ снизу */
+  color: white; /* Белый цвет заголовка */
+}
+
+.footer p {
+  margin: 5px 0; /* Отступы сверху и снизу */
+  font-size: 16px; /* Размер шрифта */
+  color: white; /* Белый цвет текста */
+}
+
+.footer a {
+  color: white; /* Белый цвет ссылок */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
